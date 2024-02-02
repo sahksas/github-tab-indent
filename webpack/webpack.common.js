@@ -5,7 +5,6 @@ const srcDir = path.join(__dirname, "..", "src");
 
 module.exports = {
   entry: {
-    options: path.join(srcDir, "options.tsx"),
     background: path.join(srcDir, "background.ts"),
     content_script: path.join(srcDir, "content_script.tsx"),
   },
@@ -36,7 +35,6 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [{ from: ".", to: "../", context: "public" }],
-      options: {},
     }),
   ],
 };

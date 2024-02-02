@@ -5,10 +5,6 @@
   "description": "",
   "version": "1.0.0",
 
-  "options_ui": {
-    "page": "options.html"
-  },
-
   "action": {
     "default_icon": {
       "16": "icon.png"
@@ -19,7 +15,7 @@
   "content_scripts": [
     {
       "matches": ["*://github.com/*"],
-      "js": ["js/vendor.js", "js/content_script.js"]
+      "js": ["js/content_script.js"]
     }
   ],
 
@@ -29,7 +25,5 @@
 
   "permissions": ["storage"],
 
-  "host_permissions": ["<all_urls>"],
-
-  "options_page": "options.html"
+  "host_permissions": ["<all_urls>"]
 }
