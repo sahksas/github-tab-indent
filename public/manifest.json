@@ -23,7 +23,7 @@
     "service_worker": "js/background.js"
   },
 
-  "permissions": ["activeTab", "*://github.com/*"],
+  "permissions": ["activeTab", "https://github.com/*"],
 
   "host_permissions": ["<all_urls>"]
 }
