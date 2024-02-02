@@ -1,70 +1,23 @@
-# Chrome Extension TypeScript Starter
+# Github Tab Indent
 
-![build](https://github.com/chibat/chrome-extension-typescript-starter/workflows/build/badge.svg)
+When writing the description of an issue or pull request in the textarea on Github, you can press the "Tab" key to add an indent at the beginning of the line.
 
-Chrome Extension, TypeScript and Visual Studio Code
+## Known Issues
 
-## Prerequisites
+## Release Notes
 
-* [node + npm](https://nodejs.org/) (Current Version)
+### 1.0.0
 
-## Option
+2024/02/02
 
-* [Visual Studio Code](https://code.visualstudio.com/)
+- Initial release🎉
 
-## Includes the following
+---
 
-* TypeScript
-* Webpack
-* React
-* Jest
-* Example Code
-    * Chrome Storage
-    * Options Version 2
-    * content script
-    * count up badge number
-    * background
+### Additional request
 
-## Project Structure
+- [sahksas/github-tab-indent](https://github.com/sahksas/github-tab-indent)
 
-* src/typescript: TypeScript source files
-* src/assets: static files
-* dist: Chrome Extension directory
-* dist/js: Generated JavaScript files
+If you have any bugs or requests, please send us a pull request directly or message us!
 
-## Setup
-
-```
-npm install
-```
-
-## Import as Visual Studio Code project
-
-...
-
-## Build
-
-```
-npm run build
-```
-
-## Build in watch mode
-
-### terminal
-
-```
-npm run watch
-```
-
-### Visual Studio Code
-
-Run watch mode.
-
-type `Ctrl + Shift + B`
-
-## Load extension to chrome
-
-Load `dist` directory
-
-## Test
-`npx jest` or `npm run test`
+---
