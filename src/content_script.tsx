@@ -34,6 +34,4 @@ const main = () => {
   }
 };
 
-chrome.storage.sync.get("isEnabled", (data) => {
-  main();
-});
+main();
