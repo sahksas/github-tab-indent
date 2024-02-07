@@ -1,5 +1,4 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  chrome.action.disable(tabId);
   const url = tab.url;
   if (url === undefined) return;
   if (url.startsWith("https://www.github.com/")) {
