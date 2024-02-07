@@ -11,6 +11,12 @@ When writing the description of an issue or pull request in the textarea on Gith
 
 ## Release Notes
 
+### 1.1.0
+
+2024/02/07
+
+- Bug fix
+
 ### 1.0.0
 
 2024/02/02
