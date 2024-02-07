@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-typescript-starter",
-  "version": "1.1.0",
-  "description": "chrome-extension-typescript-starter",
+  "name": "github-tab-indent",
+  "version": "1.0.1",
+  "description": "About When writing the description of an issue or pull request in the textarea on Github, you can press the \"Tab\" key to add an indent at the beginning of the line.",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --config webpack/webpack.dev.js --watch",

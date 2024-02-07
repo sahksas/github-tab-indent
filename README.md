@@ -7,14 +7,14 @@
 
 When writing the description of an issue or pull request in the textarea on Github, you can press the "Tab" key to add an indent at the beginning of the line.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > When using it for the first time, please reload the Github screen.
 
 ## Known Issues
 
 ## Release Notes
 
-### 1.1.0
+### 1.0.1
 
 2024/02/07
 
