@@ -1,5 +1,10 @@
 # Github Tab Indent
 
+![version](https://img.shields.io/chrome-web-store/v/mpcajejjebapfhonhljddjohfojkfpgi)
+![users](https://img.shields.io/chrome-web-store/users/mpcajejjebapfhonhljddjohfojkfpgi)
+
+[Chrome Web Store](https://chrome.google.com/webstore/detail/notion-sidepanel/mpcajejjebapfhonhljddjohfojkfpgi?hl=ja&authuser=0)
+
 When writing the description of an issue or pull request in the textarea on Github, you can press the "Tab" key to add an indent at the beginning of the line.
 
 ## Known Issues
