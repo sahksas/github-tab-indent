@@ -23,7 +23,7 @@ const main = (e: KeyboardEvent): void => {
       const afterText = text.substring(end);
       const lines = beforeText.split("\n");
       const lastLine = lines[lines.length - 1];
-      const newLastLine = "  " + lastLine;
+      const newLastLine = `  ${lastLine}`;
       activeElement.value = beforeText.substring(0, beforeText.length - lastLine.length) + newLastLine + afterText;
       activeElement.selectionStart = activeElement.selectionEnd = start + 2;
     }
