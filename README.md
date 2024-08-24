@@ -14,6 +14,14 @@ When writing the description of an issue or pull request in the textarea on Gith
 
 ## Release Notes
 
+### 1.1.0
+
+2024/08/24
+
+- Implemented accessibility (a11y) improvements.
+  - Previously, the text area could become focus-trapped due to the extension, but now pressing the Escape key allows users to exit the trap.
+  - A message indicating that the Escape key can be used to exit the focus is now displayed on the screen, and it is also announced by screen readers.
+
 ### 1.0.1
 
 2024/02/07
