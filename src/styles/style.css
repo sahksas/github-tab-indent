@@ -1,0 +1,14 @@
+div.focus-trap-info {
+  display: inline-flex;
+  height: 1.75rem;
+  padding-inline: 0.5rem;
+  align-items: center;
+  border-left: 1px solid #d0d7deb3;
+  vertical-align: bottom;
+  > span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #595959;
+    cursor: default;
+  }
+}
