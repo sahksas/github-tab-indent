@@ -1,3 +1,5 @@
+import "./styles/style.css";
+
 const main = (e: KeyboardEvent): void => {
   const activeElement = e.target as HTMLTextAreaElement;
   const isSelected =
@@ -35,6 +37,14 @@ const main = (e: KeyboardEvent): void => {
         afterText;
       activeElement.selectionStart = activeElement.selectionEnd = start + 2;
     }
+
+    if (e.key === "Escape") {
+      activeElement.removeEventListener("keydown", main, true);
+      const focusTrapInfo = document.querySelector(".focus-trap-info__text");
+      if (focusTrapInfo) {
+        focusTrapInfo.textContent = "Github Tab Indent is disabled.";
+      }
+    }
   }
 };
 
@@ -42,6 +52,27 @@ document.addEventListener("focusin", () => {
   const activeElement = document.activeElement;
   if (activeElement instanceof HTMLTextAreaElement) {
     activeElement.removeEventListener("keydown", main, true);
+    const focusTrapInfo = document.querySelector(".focus-trap-info__text");
+    if (focusTrapInfo) {
+      focusTrapInfo.textContent = "Press Escape to exit and use Tab.";
+    }
     activeElement.addEventListener("keydown", main, true);
   }
 });
+
+window.onload = () => {
+  const textAreaElement = document.querySelector(".js-write-bucket");
+  textAreaElement?.setAttribute("aria-describedby", "focus-trap-info");
+  const targetElement = textAreaElement?.nextElementSibling;
+  if (targetElement) {
+    const ariaLiveDiv = document.createElement("div");
+    ariaLiveDiv.id = "focus-trap-info";
+    ariaLiveDiv.setAttribute("aria-live", "assertive");
+    ariaLiveDiv.className = "focus-trap-info";
+    const innerTextParagraph = document.createElement("span");
+    innerTextParagraph.className = "focus-trap-info__text";
+    innerTextParagraph.textContent = "Press Escape to exit and use Tab.";
+    targetElement.appendChild(ariaLiveDiv);
+    ariaLiveDiv.appendChild(innerTextParagraph);
+  }
+};
