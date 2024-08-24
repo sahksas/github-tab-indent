@@ -1,6 +1,7 @@
 const main = (e: KeyboardEvent): void => {
   const activeElement = e.target as HTMLTextAreaElement;
-  const isSelected = activeElement.selectionStart !== activeElement.selectionEnd; // 選択範囲があるかどうか
+  const isSelected =
+    activeElement.selectionStart !== activeElement.selectionEnd; // 選択範囲があるかどうか
   if (!isSelected) {
     if (e.key === "Tab" && e.shiftKey) {
       e.preventDefault();
@@ -12,8 +13,12 @@ const main = (e: KeyboardEvent): void => {
       const lines = beforeText.split("\n");
       const lastLine = lines[lines.length - 1];
       const newLastLine = lastLine.replace(/^ {1,2}/, "");
-      activeElement.value = beforeText.substring(0, beforeText.length - lastLine.length) + newLastLine + afterText;
-      activeElement.selectionStart = activeElement.selectionEnd = start - (lastLine.length - newLastLine.length);
+      activeElement.value =
+        beforeText.substring(0, beforeText.length - lastLine.length) +
+        newLastLine +
+        afterText;
+      activeElement.selectionStart = activeElement.selectionEnd =
+        start - (lastLine.length - newLastLine.length);
     } else if (e.key === "Tab") {
       e.preventDefault();
       const start = activeElement.selectionStart;
@@ -24,7 +29,10 @@ const main = (e: KeyboardEvent): void => {
       const lines = beforeText.split("\n");
       const lastLine = lines[lines.length - 1];
       const newLastLine = `  ${lastLine}`;
-      activeElement.value = beforeText.substring(0, beforeText.length - lastLine.length) + newLastLine + afterText;
+      activeElement.value =
+        beforeText.substring(0, beforeText.length - lastLine.length) +
+        newLastLine +
+        afterText;
       activeElement.selectionStart = activeElement.selectionEnd = start + 2;
     }
   }
