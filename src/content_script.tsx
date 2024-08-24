@@ -1,7 +1,7 @@
 const main = (e: KeyboardEvent): void => {
   const activeElement = e.target as HTMLTextAreaElement;
   const isSelected =
-    activeElement.selectionStart !== activeElement.selectionEnd; // 選択範囲があるかどうか
+    activeElement.selectionStart !== activeElement.selectionEnd; // check if text is selected
   if (!isSelected) {
     if (e.key === "Tab" && e.shiftKey) {
       e.preventDefault();
