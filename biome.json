@@ -10,6 +10,8 @@
 		}
 	},
 	"formatter": {
-		"formatWithErrors": true
+		"formatWithErrors": true,
+		"indentStyle": "space",
+		"indentWidth": 2
 	}
 }
