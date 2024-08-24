@@ -1,5 +1,5 @@
 const webpack = require("webpack");
-const path = require("path");
+const path = require("node:path");
 const CopyPlugin = require("copy-webpack-plugin");
 const srcDir = path.join(__dirname, "..", "src");
 
@@ -25,6 +25,11 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: "ts-loader",
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
         exclude: /node_modules/,
       },
     ],
