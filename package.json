@@ -21,11 +21,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/bun": "latest",
     "@types/chrome": "0.0.158",
     "@types/jest": "^29.5.0",
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
-    "biome": "^0.3.3",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^7.1.2",
     "glob": "^7.1.6",
@@ -38,8 +39,7 @@
     "typescript": "^5.0.4",
     "webpack": "^5.76.0",
     "webpack-cli": "^4.0.0",
-    "webpack-merge": "^5.0.0",
-    "@types/bun": "latest"
+    "webpack-merge": "^5.0.0"
   },
   "resolutions": {
     "lodash": "^4.17.21"
