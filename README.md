@@ -14,6 +14,10 @@ When writing the description of an issue or pull request in the textarea on Gith
 
 ## Release Notes
 
+### 1.1.1
+
+Dev security update
+
 ### 1.1.0
 
 2024/08/24
